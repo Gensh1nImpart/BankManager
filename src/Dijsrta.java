@@ -59,14 +59,30 @@ public class Dijsrta {
                 }
             }
         }
-        String ans = "";
+        String ans = "路径长度为：" + dis[dist.get(t)] + "\n";
+        // 从t开始往前找
         int now = dist.get(t);
         while(now != -1){
-            ans = dist.get(now) + " " + ans;
+            for(Map.Entry<String, Integer> entry : dist.entrySet()){
+                if(entry.getValue() == now){
+                    ans += entry.getKey() + "<- ";
+                    break;
+                }
+            }
             now = pre[now];
         }
-//        return ans;
-        return "系统维护！改天再来！";
+        return ans;
+
+
+
+
+
+
+
+
+
+
+//        return "大门 -> 网点2 -> 网点3";
     }
 
 }
