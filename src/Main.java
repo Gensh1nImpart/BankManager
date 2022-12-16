@@ -19,8 +19,6 @@ public class Main {
             Class.forName("com.mysql.jdbc.Driver");
             // 本地数据库
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "123321");
-            // 远程数据库
-//            Connection conn = DriverManager.getConnection("jdbc:mysql://43.129.173.73:3306/user", "user", "123321");
             Statement stmt = conn.createStatement();
             System.out.println("数据库连接成功");
             new Login(stmt);
