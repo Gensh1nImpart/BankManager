@@ -1,0 +1,21 @@
+# 构建产物
+target/
+out/
+*.class
+*.jar
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# 系统
+.DS_Store
+
+# 运行时
+logs/
+*.log
+
+# 本地配置（含数据库口令，不要提交）
+config.properties
+.env

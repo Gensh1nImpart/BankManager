@@ -1,0 +1,7 @@
+# 复制为 config.properties 后按需修改；不要提交真实口令。
+# 也可以直接用环境变量覆盖：BANK_DB_URL / BANK_DB_USER / BANK_DB_PASSWORD / BANK_POOL_SIZE
+
+db.url=jdbc:mysql://localhost:3306/bank_manager?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai&characterEncoding=UTF-8
+db.user=root
+db.password=change-me
+db.poolSize=5
